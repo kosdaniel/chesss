@@ -17,25 +17,18 @@
 
 ## HOW TO RUN:
 - have Python installed
+- download the source code
 - from root run ```pip install -r requirements.txt```
-- launch the application by running ```python -m app.src.application.application```
-- or on Windows by running:
-  
-  ```powershell
-  $env:PYTHONPATH = (Get-Location).Path
-  python app/src/application/application.py
-  ```
+- launch the application by running ```python chesss.py```
 
-- or on Linux by running:
 
-  ```bash
-  export PYTHONPATH="$(pwd)"
-  python app/src/application/application.py
-  ```
 
 ![chess1](https://github.com/user-attachments/assets/af3bd124-66b3-41c4-b0db-ff059ddb2534)
 
 ![chess2](https://github.com/user-attachments/assets/df5f93d8-e19e-4a7a-bff0-323c02db7369)
+
+![image](https://github.com/user-attachments/assets/dfae32f4-a266-4754-8966-32ea91dfea58)
+
 
 
   
