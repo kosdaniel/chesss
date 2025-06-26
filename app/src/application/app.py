@@ -96,16 +96,17 @@ class App():
                 if event.type == pg.QUIT:
                    self.quit()
                    return
-            if self.menu.is_enabled():
-                self.menu.update(events)
+            self.menu.update(events)
+            if self.running:
                 self.menu.draw(self.display)
-            pg.display.update()
+                pg.display.update()
+            else:
+                return
 
     def quit(self):
         """
         Properly exit the application
         """
-        self.menu.disable()
         self.running = False
         pg.quit()
 
