@@ -17,14 +17,14 @@ class Game:
     """
     Class representing a single running chess game
     """
-    def __init__(self, display):
+    def __init__(self, display: pg.Surface):
         self.running = True
         self.display = display
         self.clock = pg.time.Clock()
         self.FPS = cf.DEFAULT_FPS
         self.chessboard = chessboard.Chessboard()
 
-    def run(self, chessclock, mode, start_as_white):
+    def run(self, chessclock: ChessClock, mode: int, start_as_white: int):
         """
         Run the game based on the arguments, return a string explaining how the game ended or 
         None if the game was shut down before properly ending

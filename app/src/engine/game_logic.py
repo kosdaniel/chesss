@@ -515,6 +515,14 @@ class BoardState():
             return False
         src_idx = bb_to_idx(move.src)
         dst_idx = bb_to_idx(move.dst)
+        if dst_idx == 63 and self.black_oo:
+            self.black_oo = False
+        elif dst_idx == 56 and self.black_ooo:
+            self.black_ooo = False
+        elif dst_idx == 0 and self.white_ooo:
+            self.white_ooo = False
+        elif dst_idx == 7 and self.white_oo:
+            self.white_oo = False
         en_passant = False
         capture_square = move.dst
         if move.type == 'p' and move.color == 'w':

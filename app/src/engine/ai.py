@@ -75,8 +75,7 @@ class AI():
         Minimax algorithm with alpha-beta pruning, uses only the raw BoardState object instead of the Chessboard object 
         and limits the calculation of legal moves to a minimum to boost performance.
         Takes a board state, player color and max depth as arguments, returns a move maximizing/minimizing material count 
-        heuristic based on color, always preferring moves that lead to checkmate. This algorithm also prefers moves that lead to 
-        checkmate faster than others
+        heuristic based on color, always preferring moves that lead to the fastest checkmate.
         Also inspired by https://www.youtube.com/watch?v=l-hh51ncgDI&ab_channel=SebastianLague
         """
         if initial_depth is None:
